@@ -14,7 +14,7 @@
         echo "Пароль должен быть больше 5 и меньше 90 символов";
         exit();
     }
-    $mysql = new mysqli("localhost","sanki","password","RegForm");
+    $mysql = new mysqli("localhost","user","password","RegForm");
     $mysql->query("INSERT INTO `Regist` (`name`, `email`, `password`)
     VALUES('$login','$email','$password')");
 
